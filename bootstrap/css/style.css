@@ -1,0 +1,37 @@
+html{
+    position:relative;
+    min-height:100%;
+    min-width:100%;
+}
+body{
+    margin:10px;
+    padding:10px;
+}
+.jumbotron
+{
+    background-image:url('../dublinbridge.jpg');
+    background-attachment:fixed;
+    min-height:500px;
+    margin-bottom:0px;
+    text-align:center;
+}
+
+.alt1
+{
+    background:#eee;
+    min-height:400px;
+    text-align:center;
+}
+
+.alt2
+{
+    background:#333;
+    min-height:150px;
+    text-align:center;
+}
+
+.padding
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
