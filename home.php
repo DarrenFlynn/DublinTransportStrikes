@@ -1,14 +1,15 @@
 <?php
 	include 'header.php';
+	date_default_timezone_set('Europe/Dublin');
 ?>
-<body>
-    <div class="navbar-static-top navbar-inverse" id="home">
+<body style="background-color:#C0C0C0;">
+    <div class="navbar-static-top navbar-default" id="home">
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="home.php"><h4>DTS</h4></a>
 			</div>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">Menu</button>
-			<div class="collapse navbar-collapse navHeaderCollapse" style="min-height:65px;">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right navHover">
 				<li><a href="transport.php"><h5>Transport Services</h5></a></li>
 				<li><a href="about.php"><h5>About Us</h5></a></li>
@@ -20,82 +21,88 @@
 			</div>
 		</div>
 	</div>
-	
-		<div class="jumbotron" style="background-image: url('img/green.jpg');">
+		
+		
+		<div class="jumbotron" id="image" style="background-image: url('img/green.jpg');">
 		<div class="container" id="transport">
 			<h1 class="text-center">Dublin Transport Strikes</h1><br>
 			<p class="text-center">Check out scheduled Strikes below </p>
-			<!--<p class="text-center"><a href="location.php">	<target="_blank" class="btn btn-primary btn-lg"> Check Out your Current Location</a></p>-->
 		</div>
 		</div>
-	
+		
+	<div class="container">
+		<div class="row padding" style="background-color:white;border-radius:50px;">
+			<div class="col-md-6">
+				<center><img src="img/luaslogo.jpg" style="width:85%"/></center>
+			</div>
+			<div class="col-md-6">
+			<br>
+			<h3 class="text-center" id="luas"></h3>
+			<br>
+		</div>
+	</div>
+	</div>
 
+	<br>
 	
-	<div class="container" id="about">
-		<div class="row padding" id="one">
+	<div class="container">
+		<div class="row padding" style="background-color:white;border-radius:50px;">
 			<div class="col-md-6">
-				<img src="img/Luas.png" class= "img-responsive" alt="circular holding image"/>
+			<br>
+			<h3 class="text-center" id="bus"></h3>
+			<br>
 			</div>
+			
 			<div class="col-md-6">
-			<h2> Luas </h2>
-				<p class="text-justify"><b>No Scheduled Strikes</b></p><br>
-				<p class="text-justify">Red Line Service:<b><i>On Time</i></b><br> Green Line Service:<b><i>On Time</i></b><br></br>
-				<b><i>CHECK BACK SOON FOR UPDATES!</i></b><br></br><a href="#" class="btn btn-default">New Route Launching 2017</a></p>
+				<center><img src="img/dbuslogo.jpg" style="width:85%"/></center>
+			</div>
 		</div>
 	</div>
+	
+	<br>
+	
+	<div class="container">
+		<div class="row padding" style="background-color:white;border-radius:50px;">
+			<div class="col-md-6">
+				<center><img src="img/raillogo.jpg" style="width:85%"/></center>
+			</div>
+			<div class="col-md-6">
+			<br>
+			<h3 class="text-center" id="rail"></h3>
+			<br>
+			</div>
+		</div>
+	</div>
+	<br>
 	<hr />
+	<!--Google Maps API-->
+	<div class="col-md-6">
+		<center><img src="img/googlelogo.jpg" style="width:40%"/></center>
 	</div>
-	
-	<br></br>
-		<div class="row padding" id="two">
-			<div class="col-md-1"></div>
-			<div class="col-md-5">
-			<h2> Dublin Bus </h2>
-				<p class="text-justify"><b>December Strike Days:</b><br></br>2nd Decemeber<br></br>5th December<br></br>6th December<br></br><b>All Service Routes Affected</b>
-										<br></br><b><i>CHECK BACK SOON FOR UPDATES!</i></b></p>
-			</div>
-			
-			
-			<div class="row padding" id="three">
-				<img src="img/Bus.png" class="img-responsive" alt="circular holding image"/>
-			</div>
-			<hr />
-		</div>
-	<br></br>
-	
-	<div class="row padding">
-		<div class="col-md-1"></div>
-			<div class="col-md-5">
-				<img src="img/Dart.png" class="img-responsive" alt="circular holding image"/>
-			</div>
-			<div class="col-md-6">
-			<h2> Irish Rail </h2>
-				<p class="text-justify"><b>No Scheduled Strikes</b></p><br>
-				<p class="text-justify">All NorthBound Services:<br><b><i>23 Minute Delay</i></b><br></br>All SouthBound Services:</br>
-				<b><i>On Time</i></b><br></br><b><i>CHECK BACK SOON FOR UPDATES!</i></b><br></br><a href="#" class="btn btn-default">Commuter Strikes Update Coming 2017</a></p>
-		</div>
+	<div class="col-md-6">
+	<p class="text-center"><a href="map.php" target="map.php" class="btn btn-success btn-lg"> Click here to find another route!</a></p>
 	</div>
-	<br>
-	<!--Google Maps-->
-	<p class="text-center"><a href="map.html">	<target="_blank" class="btn btn-warning btn-lg"> Need to plan another route? Click here!</a></p>
-	<!--Hailo-->
-	<p class="text-center"><a href="test.html">	<target="_blank" class="btn btn-warning btn-lg"> Or need a cab? Then click here!</a></p>
-	<br>
-	<hr>
+	<br><br>
+	<hr />
+	
+	<!--Facebook API-->
 	<div class="alt1">
 		<div class="container">
-			<div class="col-sm-2">
-				<center><img src="img/fb.png"><img></center>
+			<div class="col-sm-1">
+				<center><img src="img/fblogo.jpg"><img></center>
+				<br>
 			</div>
-			<div class="col-sm-1"></div>
+			<div class="col-sm-2"></div>
 			<div class="col-sm-4">
 			<div id="fb-root">
+			<br>
 			<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true">
 			</div>
 			</div>
 			</div>
 			<div class="col-sm-1"></div>
 			<div class="col-sm-3">
+			<br>
 			<div
 			  class="fb-like"
 			  data-share="true"
@@ -108,29 +115,26 @@
 		</div>
 
 	<hr />
-
-
-	<div class="container padding" id="contact">
-		<form role="form">
-			<div class="form-group">
-				<label for="form">Sign Up Here for Promotional Offers</label>
-				<br></br>
-				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
-			</div>
-			<div class="form-group">
-			<label for="email">Name:</label>
-			<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name here"/>
-			</div>
-			<div class="form-group">
-			<label for="message">Message:</label>
-				<textarea class="form-control" name="message" id="message "placeholder="Your message here"></textarea>
-			</div>
-			<div class="form-group">
-			<input type="checkbox" /> Send me Promotions
-			</div>
-			<button type="submit" class="btn btn-success">Submit</button>
-		</form>
+	<h1 class="text-center"><u>Comments Section</u></h1><br>
+	<div class="container padding">
+	<?php
+	include 'db.php';
+	include 'includes/comments.inc.php';
+	if(isset($_SESSION['id'])){
+	echo "<form role='form' method='POST' action='".setComment($conn)."'>
+        <input type='hidden' name='username' value='".$_SESSION['id']."'/> 
+        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'/> 
+        <label for='comment'>Write a comment:</label> 
+        <textarea name='message' class='form-control' rows='5' maxlength='1000'
+        placeholder='Enter your comment here...' style='resize:none;'></textarea><br />
+        <button type='submit' name='commentSubmit' value='submit' 
+        class='btn btn-success'>Comment</button>
+    </form><br>";
+	}
+    
+    getComment($conn);
+    
+    ?>
 	</div>
 	
 	<br><br>
@@ -143,6 +147,32 @@
 	</div>
 	
 	<br>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	<script>
+	    // Initialize Firebase
+	    var config = {
+	      apiKey: "AIzaSyAmMvLV56hFxZJtG3aeEavIazpoZo6Veis",
+	      authDomain: "strikes-aeab0.firebaseapp.com",
+	      databaseURL: "https://strikes-aeab0.firebaseio.com",
+	      storageBucket: "strikes-aeab0.appspot.com",
+	      messagingSenderId: "905368545738"
+	    };
+	    firebase.initializeApp(config);
+	    
+	    var luas = document.getElementById('luas');
+	    var dbRef = firebase.database().ref().child('luasStrike');
+	    dbRef.on('value', snap => luas.innerText = snap.val());
+	    
+	    var bus = document.getElementById('bus');
+	    var dbRef = firebase.database().ref().child('busStrike');
+	    dbRef.on('value', snap => bus.innerText = snap.val());
+	    
+	    var rail = document.getElementById('rail');
+	    var dbRef = firebase.database().ref().child('railStrike');
+	    dbRef.on('value', snap => rail.innerText = snap.val());
+	</script>
+	
 	<script>
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {

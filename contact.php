@@ -1,14 +1,14 @@
 <?php 
 	include 'header.php';
 ?>
-<body>
-	<div class="navbar-static-top navbar-inverse" id="home">
+<body style="background-color:#C0C0C0;">
+	<div class="navbar-static-top navbar-default" id="home">
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="home.php"><h4>DTS</h4></a>
 			</div>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">Menu</button>
-			<div class="collapse navbar-collapse navHeaderCollapse" style="min-height:65px;">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right navHover">
 				<li><a href="home.php"><h5>Home</h5></a></li>
 				<li><a href="transport.php"><h5>Transport</h5></a></li>
@@ -28,26 +28,29 @@
 	</div>
 	
 	<div class="alt1">
-	<div class="container">
-		<div class="row">
+	<div class="container padding">
+		<div class=" row medPadding">
 			<h1 class="text-center">Questions or Comments?</h1>
 			
 		  <h2 class="text-center">Fill in the section below and we will get back to you!</h2>
 
-      <form role="form" method="post" action="contact.php" id="contactForm">
-        <label for="name">Name:</label> 
-        <input type="text" name="name" id="name" class="form-control" placeholder="Your name here" /> 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com" /> 
-        <label for="question">Comment:</label> 
-        <textarea class="form-control" rows="5" maxlength="255" id="comment" name="comment" 
-        placeholder="Enter your comment here..." required=""></textarea><br />
-        <button type="submit" name="submit" value="submit" class=
-        "btn greenHoverBtn roundBtn">Send Query</button>
-      </form>
+      <?php
+      include 'db.php';
+      echo "<form role='form' method='POST' action='includes/query.inc.php'>
+        <label for='name'>Name:</label> 
+        <input type='text' name='name' class='form-control' placeholder='Your name here' /> 
+        <label for='email'>Email:</label>
+        <input type='email' name='email' class='form-control' placeholder='example@example.com' /> 
+        <label for='query'>Comment:</label> 
+        <textarea name='query' class='form-control' rows='5' maxlength='255'
+        placeholder='Enter your comment here...' style='resize:none;'></textarea><br />
+        <button type='submit' name='querySubmit' value='submit' 
+        class='btn greenHoverBtn roundBtn'>Send Query</button>
+      </form>";
+      ?>
     </div>
     
-   <div class="container">
+   <div class="container padding">
     <div class="col-md-12 text-center smlPadding darkGreyText">
       <h2 class=""><strong>Check us out on Social Media :)</strong></h2>
     </div>
@@ -88,7 +91,7 @@
     
     <hr class="shortHr" />
 
-  <div class="container">
+  <div class="container padding">
     <div class=" row medPadding">
       <div class="col-md-12 text-center smlPadding darkGreyText">
         <h2><strong>Our Office Location!</strong></h2><br />
@@ -107,7 +110,7 @@
 
             
   <div class="alt2">
-	<div class="container">
+	<div class="container padding">
 	<center><footer>&copy; Team Project Group P<br />
 	<a href="#home">Back to Top</footer></center>
 	</div>

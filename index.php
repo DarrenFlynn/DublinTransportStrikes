@@ -24,7 +24,7 @@
         }
         </style>
 	</head>
-	<body style="background-color: #98FB98;">
+	<body style="background-image:url(img/dublinbridge2.jpg);">
 	<div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -35,8 +35,8 @@
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
-
-	<div class="col-sm-12">
+  <div class="col-sm-1"></div>
+	<div class="col-sm-10">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -50,24 +50,24 @@
       <div class="item">
         <img src="img/LuasP.jpg" alt="Luas" width="460" height="345">
         <div class="carousel-caption">
-          <h3>DTS</h3>
-          <p>Luas</p>
+          <h3></h3>
+          <h3>Luas</h3>
         </div>
       </div>
     
       <div class="item">
         <img src="img/Dbus.jpg" alt="DubBus" width="460" height="345">
         <div class="carousel-caption">
-          <h3>DTS</h3>
-          <p>Dublin Bus</p>
+          <h3></h3>
+          <h3>Dublin Bus</h3>
         </div>
       </div>
 
       <div class="item">
         <img src="img/irishrail.jpg" alt="IrishRail" width="460" height="345">
         <div class="carousel-caption">
-          <h3>DTS</h3>
-          <p>Irish Rail</p>
+          <h3></h3>
+          <h3>Irish Rail</h3>
         </div>
       </div>
   
@@ -83,6 +83,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div class="col-sm-1"></div>
 </div>
 
 </div>
@@ -97,10 +98,11 @@
 			  <label for="password">Password:</label>
 			  <input type="password" class="form-control" name="password" placeholder="Enter your password"/>
 			  <br>
-			  <button type="submit" class="btn btn-primary">Log In</button>
+			  <center><button type="submit" class="btn btn-primary">Log In</button></center>
 		</form>
+		<br>
 		<form action="signup.php">
-    	  <button type="submit" class="btn btn-danger" style="float:right;">Sign up</button>
+    	  <center><button type="submit" class="btn btn-danger">Sign up</button></center>
     </form>
 		</div>
 		<div class="col-sm-2"></div>

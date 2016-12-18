@@ -11,7 +11,10 @@
 		</title>
 		   	<meta name="viewport" content="width=device-width, initial-scale=1">
 		   	<meta charset="utf-8">
+		   	<link rel="stylesheet" href="bootstrap/css/jumbo.css"/>
+		   	<link rel="stylesheet" href="bootstrap/css/comments.css"/>
 	   		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	   		<link rel="shortcut icon" href="img/Bridge.png" />
 	   		<!--Navbar collapse-->
 	   		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 			<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

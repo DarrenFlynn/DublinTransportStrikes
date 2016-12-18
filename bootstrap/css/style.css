@@ -9,7 +9,6 @@ body{
 }
 .jumbotron
 {
-    background-image:url('../dublinbridge.jpg');
     background-attachment:fixed;
     min-height:500px;
     margin-bottom:0px;
@@ -34,4 +33,9 @@ body{
 {
     padding-top:20px;
     padding-bottom:20px;
+}
+
+.comment-box
+{
+   
 }

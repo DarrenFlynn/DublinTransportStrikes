@@ -9,7 +9,7 @@
 	}
 	
 ?>
-<body style="background-color: #d3d3d3;">
+<body style="background-image:url(img/dublinbridge2.jpg);">
 	<br>
 	
 	<center><h3><b>Sign Up with us here!</b></h3></center>
@@ -22,19 +22,18 @@
 			<input type="text" name="username" class="form-control" placeholder="Username"/>
 			<label for="password">Your Password:</label>
 			<input type="password" name="password" class="form-control" placeholder="Password"/>
+			<br>
+			<center><button type="submit" class="btn btn-primary">Sign Up</button></center>
 			</form>
 		</div>
 		<div class="col-sm-2"></div>
-		<br><br><br><br><br><br><br>
 		<center>
-			<form action="includes/signup.inc.php" method="POST">
-				<button type="submit" class="btn btn-primary">Sign Up</button>
-			</form>
-		</div>
-	
-		<br>
-	
+		<div class="col-sm-12">
 		<form action="index.php">
+		<br>
 		<button type="submit" class="btn btn-danger">Back</button>
 		</form>
 		</center>
+		</div>
+
+		
